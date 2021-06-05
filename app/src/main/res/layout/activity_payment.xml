@@ -1,0 +1,598 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    app:layoutDescription="@xml/activity_payment_scene"
+    tools:context=".HomeActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout44"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:context=".HomeActivity">
+
+        <ImageView
+            android:id="@+id/actionBar2"
+            android:layout_width="match_parent"
+            android:layout_height="145dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/actionbar20"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <ImageView
+            android:id="@+id/imageView23"
+            android:layout_width="113dp"
+            android:layout_height="119dp"
+            android:scaleType="fitXY"
+            app:layout_constraintEnd_toStartOf="@+id/menuPayment_id"
+            app:layout_constraintStart_toEndOf="@+id/backPayment_id"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/homebackgroundcircle2" />
+
+        <ImageView
+            android:id="@+id/menuPayment_id"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            app:layout_constraintBottom_toBottomOf="@+id/actionBar2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.3"
+            app:srcCompat="@drawable/menu50" />
+
+        <ImageView
+            android:id="@+id/backPayment_id"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            app:layout_constraintBottom_toBottomOf="@+id/menuPayment_id"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/menuPayment_id"
+            app:srcCompat="@drawable/backarrow5" />
+
+        <TextView
+            android:id="@+id/textView37"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="المستحقات"
+            android:textColor="#000"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/actionBar1"
+            app:layout_constraintEnd_toEndOf="@+id/imageView23"
+            app:layout_constraintStart_toStartOf="@+id/imageView23"
+            app:layout_constraintTop_toBottomOf="@+id/imageView23"  />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="68dp"
+            android:layout_height="70dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView23"
+            app:layout_constraintEnd_toEndOf="@+id/imageView23"
+            app:layout_constraintStart_toStartOf="@+id/imageView23"
+            app:layout_constraintTop_toTopOf="@+id/imageView23"
+            app:srcCompat="@drawable/logo10" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="165dp"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout44">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableLayout
+                android:id="@+id/tableLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#BDAA01"
+                android:layoutDirection="rtl"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="العام المالى"
+                        android:textColor="#ffffff"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginRight="1dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="القيمة"
+                        android:textColor="#ffffff"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="20dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+
+                </TableRow>
+
+                <TableRow>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="1dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:gravity="center"
+                        android:text="2020"
+                        android:textColor="#000000"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="1dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:gravity="center"
+                        android:text="2500"
+                        android:textColor="#000000"
+                        android:textSize="20dp" />
+
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="1dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:gravity="center"
+                        android:layoutDirection="rtl" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="1dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:gravity="center"
+                        android:text="2019"
+                        android:textColor="#000000"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="1dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:gravity="center"
+                        android:text="3200"
+                        android:textColor="#000000"
+                        android:textSize="20dp" />
+
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="1dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:gravity="center"
+                        android:layoutDirection="rtl" />
+                </TableRow>
+            </TableLayout>
+
+            <CheckBox
+                android:id="@+id/thefine_checkBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layoutDirection="rtl"
+                android:text="غرامة إعادة قيد "
+                android:textColor="#000000"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.16"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tableLayout" />
+
+            <EditText
+                android:id="@+id/fine_value"
+                android:layout_width="171dp"
+                android:layout_height="46dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginEnd="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/edit_text_style"
+                android:ems="10"
+                android:hint="قيمة الغرامة"
+                android:inputType="number"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                app:layout_constraintEnd_toStartOf="@+id/thefine_checkBox"
+                app:layout_constraintTop_toTopOf="@+id/thefine_checkBox" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginRight="30dp"
+                android:text="نوع التحصيل"
+                android:textColor="#000000"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/thefine_checkBox" />
+
+            <CheckBox
+                android:id="@+id/creditCard_checkBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="25dp"
+                android:layout_marginRight="25dp"
+                android:text="بطاقة ائتمانية"
+                android:textColor="#000000"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/textView12"
+                app:layout_constraintEnd_toStartOf="@+id/textView12"
+                app:layout_constraintTop_toTopOf="@+id/textView12" />
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="44dp"
+                android:text="قيمة الاشتراك"
+                android:textColor="#000000"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:layout_marginRight="5dp"
+                app:layout_constraintEnd_toStartOf="@+id/imageView4"
+                app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="295dp"
+                android:layout_height="5dp"
+                android:layout_marginTop="50dp"
+
+                android:background="#BDAA01"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView19"></LinearLayout>
+
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/menu_item_style"
+                android:text="دفع من خلال "
+                android:textColor="#339933"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+            <ImageButton
+                android:id="@+id/mastercard_button"
+                android:layout_width="141dp"
+                android:layout_height="113dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/button_style2"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/linearLayout4"
+                app:layout_constraintTop_toBottomOf="@+id/textView20"
+                app:srcCompat="@drawable/mastercard1" />
+
+            <ImageButton
+                android:id="@+id/visacard_button"
+                android:layout_width="141dp"
+                android:layout_height="113dp"
+                android:background="@drawable/button_style2"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toBottomOf="@+id/mastercard_button"
+                app:layout_constraintEnd_toStartOf="@+id/linearLayout4"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/mastercard_button"
+                app:srcCompat="@drawable/visalago1" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout4"
+                android:layout_width="3dp"
+                android:layout_height="118dp"
+                android:background="#BDAA01"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView20"></LinearLayout>
+
+            <TextView
+                android:id="@+id/valu_of_subscription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/menu_item_style"
+                android:text="5700.00"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/textView19"
+                app:layout_constraintEnd_toStartOf="@+id/textView19"
+                app:layout_constraintTop_toTopOf="@+id/textView19" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="20dp"
+                android:layout_height="15dp"
+                app:layout_constraintBottom_toBottomOf="@+id/textView19"
+                app:layout_constraintEnd_toEndOf="@+id/textView12"
+                app:layout_constraintTop_toTopOf="@+id/textView19"
+                app:srcCompat="@drawable/moneyicon2" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+    <ScrollView
+        android:id="@+id/menu33"
+        android:layout_width="190dp"
+        android:layout_height="350dp"
+        android:padding="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layoutDirection="rtl"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="65dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="5dp"
+                android:src="@drawable/logo10" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="5dp"
+                android:layout_marginTop="5dp"
+                android:paddingBottom="30dp"
+                android:text="Main Menu"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:id="@+id/user_dataID33"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/menu_item_style2"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/person_icon3"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/humanicon2" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/person_icon3"
+                    android:text="بيانات العضو"
+                    android:textColor="#000"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/payments_id3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/selector1"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/money_icon"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/moneyicon2" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/money_icon"
+                    android:text="المستحقات"
+                    android:textColor="#000"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/receipts_id3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/menu_item_style2"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/receipt_icon"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/receipt_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/receipt_icon"
+                    android:text="الإيصالات"
+                    android:textColor="#000"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/database_id3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/menu_item_style2"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/data_icon"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/databaseicon2" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/data_icon"
+                    android:text="البيانات بالعام"
+                    android:textColor="#000"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/activities_id3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/menu_item_style2"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/activities_icon"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/activityicon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/activities_icon"
+                    android:text="الأنشطه"
+                    android:textColor="#000"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/news_id3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/menu_item_style2"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/news_icon"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/newicon3" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/news_icon"
+                    android:text="الأخبار"
+                    android:textColor="#000"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/logout_id3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/menu_item_style2"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/logOut_icon"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/logouticon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/logOut_icon"
+                    android:text="Logout"
+                    android:textColor="#000"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.motion.widget.MotionLayout>

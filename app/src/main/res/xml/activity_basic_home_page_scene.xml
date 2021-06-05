@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+    <Transition
+        motion:constraintSetEnd="@+id/end"
+        motion:constraintSetStart="@id/start"
+        motion:duration="5000"
+        motion:autoTransition="animateToEnd"
+        motion:pathMotionArc="flip">
+       <KeyFrameSet>
+           <KeyAttribute
+               motion:motionTarget="@+id/textView35"
+               motion:framePosition="50"
+               android:alpha="0.25" />
+           <KeyAttribute
+               motion:motionTarget="@+id/clubLogo_id2"
+               motion:framePosition="50"
+               android:rotation="45" />
+       </KeyFrameSet>
+    </Transition>
+    <ConstraintSet android:id="@+id/start">
+        <Constraint
+            android:id="@+id/imageView9"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintStart_toStartOf="parent" />
+        <Constraint
+            android:id="@+id/imageView9"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintStart_toStartOf="parent" />
+        <Constraint
+            android:layout_marginEnd="15dp"
+            motion:layout_editor_absoluteY="15dp"
+            android:layout_height="60dp"
+            android:layout_marginRight="15dp"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="60dp"
+            android:id="@+id/menuOfBasicHome" />
+        <Constraint
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="15dp"
+            motion:layout_constraintTop_toTopOf="parent"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="0dp"
+            android:id="@+id/menuOfBasicHome" />
+        <Constraint
+            android:id="@+id/menuOfBasicHome"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="60dp"
+            android:layout_height="1dp"
+            android:layout_marginEnd="15dp"
+            motion:layout_constraintTop_toTopOf="parent"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp" />
+        <Constraint
+            android:layout_height="wrap_content"
+            motion:layout_constraintEnd_toStartOf="@+id/imageView6"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_width="match_parent"
+            motion:layout_constraintTop_toBottomOf="parent"
+            android:id="@+id/scrollView1" />
+        <Constraint
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:id="@+id/scrollView2"
+            motion:layout_constraintTop_toBottomOf="parent" />
+        <Constraint
+            android:id="@+id/imageView7"
+            android:layout_width="60dp"
+            android:layout_height="1dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="15dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_editor_absoluteY="15dp" />
+        <Constraint
+            android:layout_height="201dp"
+            motion:layout_constraintEnd_toEndOf="@+id/textView35"
+            android:layout_width="175dp"
+            motion:layout_constraintTop_toBottomOf="@+id/textView35"
+            android:id="@+id/clubLogo_id2"
+            motion:layout_constraintStart_toStartOf="@+id/textView35"
+            motion:layout_editor_absoluteY="274dp" />
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end">
+        <Constraint
+            android:id="@+id/imageView6"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintStart_toStartOf="parent" />
+        <Constraint
+            android:layout_height="1dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:id="@+id/textView35" />
+        <Constraint
+            android:id="@+id/textView35"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintStart_toStartOf="parent" />
+        <Constraint
+            android:layout_height="100dp"
+            android:layout_width="80dp"
+            android:id="@+id/clubLogo_id2"
+            motion:layout_constraintEnd_toStartOf="@+id/menuOfBasicHome"
+            motion:layout_constraintStart_toEndOf="@+id/imageView7"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintBottom_toBottomOf="@id/imageView9"/>
+
+
+
+    </ConstraintSet>
+</MotionScene>

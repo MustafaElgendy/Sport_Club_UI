@@ -1,0 +1,489 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/homebackground"
+    app:layoutDescription="@xml/activity_basic_home_page2_scene"
+    tools:context=".BasicHomePageActivity2">
+
+<RelativeLayout
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <ImageButton
+                android:id="@+id/backArrowButton7"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/arrowback"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:id="@+id/imageButton8"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/menu88"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:id="@+id/imageButton9"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/search"
+                app:layout_constraintBottom_toBottomOf="@+id/imageButton8"
+                app:layout_constraintEnd_toStartOf="@+id/imageButton8"
+                app:layout_constraintTop_toTopOf="@+id/imageButton8" />
+
+            <ImageButton
+                android:id="@+id/imageButton10"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/personicon"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:id="@+id/constraintLayout6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/constraintLayout4"
+            android:layout_marginTop="10dp">
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/scrollView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <TextView
+                    android:id="@+id/textView53"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="مصطفى احمد الجندى"
+                    android:textColor="#E8E7E0"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView54"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="15009"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@+id/textView53"
+                    app:layout_constraintStart_toStartOf="@+id/textView53"
+                    app:layout_constraintTop_toBottomOf="@+id/textView53" />
+
+                <ImageView
+                    android:id="@+id/imageView25"
+                    android:layout_width="match_parent"
+                    android:layout_height="450dp"
+                    android:layout_marginTop="20dp"
+                    android:scaleType="fitXY"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView54"
+                    app:srcCompat="@drawable/homebackground800" />
+
+                <ImageView
+                    android:id="@+id/imageView27"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/homebackgroundcircle2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView54" />
+
+
+                <ImageView
+                    android:id="@+id/imageView26"
+                    android:layout_width="103dp"
+                    android:layout_height="127dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView27"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView27"
+                    app:layout_constraintStart_toStartOf="@+id/imageView27"
+                    app:layout_constraintTop_toBottomOf="@+id/textView54"
+                    app:srcCompat="@drawable/logo10" />
+
+                <ImageButton
+                    android:id="@+id/paymentButton"
+                    android:layout_width="135dp"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="25dp"
+                    android:background="@drawable/selector1"
+                    app:layout_constraintEnd_toStartOf="@+id/linearLayout"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView27">
+
+                </ImageButton>
+
+                <TextView
+                    android:id="@+id/textView47"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="المستحقات"
+                    android:textColor="#FFFFFF"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/paymentButton"
+                    app:layout_constraintEnd_toEndOf="@+id/paymentButton"
+                    app:layout_constraintStart_toStartOf="@+id/paymentButton"
+                    app:layout_constraintTop_toTopOf="@+id/paymentButton" />
+
+                <ImageButton
+                    android:id="@+id/dataBaseButton"
+                    android:layout_width="135dp"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/selector1"
+                    app:layout_constraintEnd_toEndOf="@+id/paymentButton"
+                    app:layout_constraintStart_toStartOf="@+id/paymentButton"
+                    app:layout_constraintTop_toBottomOf="@+id/paymentButton" />
+
+                <TextView
+                    android:id="@+id/textView48"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="البيانات"
+                    android:textColor="#FFFFFF"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/dataBaseButton"
+                    app:layout_constraintEnd_toEndOf="@+id/dataBaseButton"
+                    app:layout_constraintStart_toStartOf="@+id/dataBaseButton"
+                    app:layout_constraintTop_toTopOf="@+id/dataBaseButton" />
+
+                <ImageButton
+                    android:id="@+id/newsButton"
+                    android:layout_width="135dp"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/selector1"
+                    app:layout_constraintEnd_toEndOf="@+id/dataBaseButton"
+                    app:layout_constraintStart_toStartOf="@+id/dataBaseButton"
+                    app:layout_constraintTop_toBottomOf="@+id/dataBaseButton" />
+
+                <TextView
+                    android:id="@+id/textView49"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="الأخبار"
+                    android:textColor="#FFFFFF"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/newsButton"
+                    app:layout_constraintEnd_toEndOf="@+id/newsButton"
+                    app:layout_constraintStart_toStartOf="@+id/newsButton"
+                    app:layout_constraintTop_toTopOf="@+id/newsButton" />
+
+                <ImageButton
+                    android:id="@+id/userDataButton"
+                    android:layout_width="135dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/selector1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/linearLayout"
+                    app:layout_constraintTop_toTopOf="@+id/paymentButton" />
+
+                <TextView
+                    android:id="@+id/textView50"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="بيانات العضو"
+                    android:textColor="#FFFFFF"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/userDataButton"
+                    app:layout_constraintEnd_toEndOf="@+id/userDataButton"
+                    app:layout_constraintStart_toStartOf="@+id/userDataButton"
+                    app:layout_constraintTop_toTopOf="@+id/userDataButton" />
+
+                <ImageButton
+                    android:id="@+id/receiptsButton5"
+                    android:layout_width="135dp"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/selector1"
+                    app:layout_constraintEnd_toEndOf="@+id/userDataButton"
+                    app:layout_constraintStart_toStartOf="@+id/userDataButton"
+                    app:layout_constraintTop_toBottomOf="@+id/userDataButton" />
+
+                <TextView
+                    android:id="@+id/textView51"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="الإيصالات"
+                    android:textColor="#FFFFFF"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/receiptsButton5"
+                    app:layout_constraintEnd_toEndOf="@+id/receiptsButton5"
+                    app:layout_constraintStart_toStartOf="@+id/receiptsButton5"
+                    app:layout_constraintTop_toTopOf="@+id/receiptsButton5" />
+
+                <ImageButton
+                    android:id="@+id/activitiesButton6"
+                    android:layout_width="135dp"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/selector1"
+                    app:layout_constraintEnd_toEndOf="@+id/userDataButton"
+                    app:layout_constraintStart_toStartOf="@+id/userDataButton"
+                    app:layout_constraintTop_toBottomOf="@+id/receiptsButton5" />
+
+                <TextView
+                    android:id="@+id/textView52"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="الأنشطة"
+                    android:textColor="#FFFFFF"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/activitiesButton6"
+                    app:layout_constraintEnd_toEndOf="@+id/activitiesButton6"
+                    app:layout_constraintStart_toStartOf="@+id/activitiesButton6"
+                    app:layout_constraintTop_toTopOf="@+id/activitiesButton6" />
+
+                <LinearLayout
+                    android:id="@+id/linearLayout"
+                    android:layout_width="1dp"
+                    android:layout_height="100dp"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView27"></LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.core.widget.NestedScrollView>
+
+        </LinearLayout>
+</RelativeLayout>
+    <ScrollView
+        android:id="@+id/menu20"
+        android:layout_width="190dp"
+        android:layout_height="350dp"
+        android:padding="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="50dp"
+        android:orientation="vertical"
+        android:layoutDirection="rtl"
+        >
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="65dp"
+            android:src="@drawable/logo10"
+            android:layout_margin="5dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="20dp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:text="Main Menu"
+            android:layout_margin="5dp"
+            android:layout_marginTop="5dp"
+            android:paddingBottom="30dp"/>
+        <RelativeLayout
+            android:id="@+id/user_dataID2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/menu_item_style2"
+            android:padding="10dp">
+            <ImageView
+                android:id="@+id/person_icon2"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/humanicon2"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="بيانات العضو"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:layout_toLeftOf="@+id/person_icon2"
+                android:textSize="15dp" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/payments_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/menu_item_style2"
+            android:padding="10dp">
+        <ImageView
+            android:id="@+id/money_icon"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/moneyicon2"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="المستحقات"
+            android:textStyle="bold"
+            android:layout_toLeftOf="@+id/money_icon"
+            android:textColor="#000"
+            android:textSize="15dp" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/receipts_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/menu_item_style2"
+            android:padding="10dp">
+        <ImageView
+            android:id="@+id/receipt_icon"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/receipt_icon"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="الإيصالات"
+            android:textStyle="bold"
+            android:layout_toLeftOf="@+id/receipt_icon"
+            android:textColor="#000"
+            android:textSize="15dp" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/database_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/menu_item_style2"
+            android:padding="10dp">
+        <ImageView
+            android:id="@+id/data_icon"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/databaseicon2"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="البيانات بالعام"
+            android:textStyle="bold"
+            android:layout_toLeftOf="@+id/data_icon"
+            android:textColor="#000"
+            android:textSize="15dp" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/activities_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/menu_item_style2"
+            android:padding="10dp">
+        <ImageView
+            android:id="@+id/activities_icon"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/activityicon"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="الأنشطه"
+            android:textStyle="bold"
+            android:layout_toLeftOf="@+id/activities_icon"
+            android:textColor="#000"
+            android:textSize="15dp" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/news_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/menu_item_style2"
+            android:padding="10dp">
+        <ImageView
+            android:id="@+id/news_icon"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/newicon3"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="الأخبار"
+            android:textStyle="bold"
+            android:layout_toLeftOf="@+id/news_icon"
+            android:textColor="#000"
+            android:textSize="15dp" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/logout_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/menu_item_style2"
+            android:padding="10dp">
+        <ImageView
+            android:id="@+id/logOut_icon"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/logouticon"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Logout"
+            android:layout_toLeftOf="@+id/logOut_icon"
+            android:textStyle="bold"
+            android:textColor="#000"
+            />
+        </RelativeLayout>
+    </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.motion.widget.MotionLayout>

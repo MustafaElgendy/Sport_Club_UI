@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background10"
+   >
+
+    <androidx.constraintlayout.motion.widget.MotionLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layoutDescription="@xml/activity_sign_up_xml_constraintlayout_scene"
+        tools:context=".SignUpActivity">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:text="Sign Up"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:typeface="normal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView14"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/membership_number_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/edit_text_style"
+            android:ems="10"
+            android:hint="رقم العضوية"
+            android:inputType="number"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:textColor="#000"
+            android:textDirection="rtl"
+            app:layout_constraintEnd_toEndOf="@+id/personal_id_number"
+            app:layout_constraintStart_toStartOf="@+id/personal_id_number"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <EditText
+            android:id="@+id/personal_id_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/edit_text_style"
+            android:ems="10"
+            android:hint="رقم تحقيق الشخصية"
+            android:inputType="number"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:textColor="#000"
+            android:textDirection="rtl"
+            app:layout_constraintEnd_toStartOf="@+id/textView5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/membership_number_id" />
+
+        <Button
+            android:id="@+id/sign_up_id"
+            android:layout_width="167dp"
+            android:layout_height="49dp"
+            android:layout_marginTop="70dp"
+            android:text="إنشاء حساب"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:backgroundTint="#339933"
+            android:background="@drawable/button_style2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/personal_id_number" />
+
+        <TextView
+            android:id="@+id/sign_in2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="120dp"
+            android:background="@drawable/menu_item_style2"
+            android:text="تسجيل الدخول"
+            android:textColor="#F6296F"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sign_up_id" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_style2"
+            android:text="رقم العضوية"
+            android:textColor="#000000"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/membership_number_id"
+            app:layout_constraintEnd_toEndOf="@+id/textView5"
+            app:layout_constraintStart_toStartOf="@+id/textView5"
+            app:layout_constraintTop_toTopOf="@+id/membership_number_id" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/button_style2"
+            android:text="رقم تحقيق الشخصية"
+            android:textColor="#000000"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/personal_id_number"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/personal_id_number" />
+
+        <ImageView
+            android:id="@+id/imageView14"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_marginTop="90dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/logo10" />
+
+
+    </androidx.constraintlayout.motion.widget.MotionLayout>
+</ScrollView>

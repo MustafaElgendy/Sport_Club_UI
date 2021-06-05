@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    app:layoutDescription="@xml/activity_club_activities_scene">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout555"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:context=".ClubActivities">
+
+        <ImageView
+            android:id="@+id/actionBar1"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/actionbar20"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <ImageView
+            android:id="@+id/imageView23"
+            android:layout_width="113dp"
+            android:layout_height="119dp"
+            android:scaleType="fitXY"
+            app:layout_constraintEnd_toStartOf="@+id/menuClubActivity_id"
+            app:layout_constraintStart_toEndOf="@+id/backClubActivity_id"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/homebackgroundcircle2" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="68dp"
+            android:layout_height="70dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView23"
+            app:layout_constraintEnd_toEndOf="@+id/imageView23"
+            app:layout_constraintStart_toStartOf="@+id/imageView23"
+            app:layout_constraintTop_toTopOf="@+id/imageView23"
+            app:srcCompat="@drawable/logo10" />
+
+        <ImageView
+            android:id="@+id/menuClubActivity_id"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            app:layout_constraintBottom_toBottomOf="@+id/actionBar1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.3"
+            app:srcCompat="@drawable/menu50" />
+
+        <ImageView
+            android:id="@+id/backClubActivity_id"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            app:layout_constraintBottom_toBottomOf="@+id/menuClubActivity_id"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/menuClubActivity_id"
+            app:srcCompat="@drawable/backarrow5" />
+
+        <TextView
+            android:id="@+id/textView45"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="الأنشطة"
+            android:textColor="#000"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/actionBar1"
+            app:layout_constraintEnd_toEndOf="@+id/imageView23"
+            app:layout_constraintStart_toStartOf="@+id/imageView23"
+            app:layout_constraintTop_toBottomOf="@+id/imageView23" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/clubActivities_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout555" />
+    <ScrollView
+        android:id="@+id/menu77"
+        android:layout_width="190dp"
+        android:layout_height="350dp"
+        android:padding="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layoutDirection="rtl"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="65dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="5dp"
+                android:src="@drawable/logo10" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="5dp"
+                android:layout_marginTop="5dp"
+                android:paddingBottom="30dp"
+                android:text="Main Menu"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:id="@+id/user_dataID77"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/menu_item_style2"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/person_icon2"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/humanicon2" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/person_icon2"
+                    android:text="بيانات العضو"
+                    android:textColor="#000"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/payments_id7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/menu_item_style2"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/money_icon"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/moneyicon2" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/money_icon"
+                    android:text="المستحقات"
+                    android:textColor="#000"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/receipts_id7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/menu_item_style2"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/receipt_icon"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/receipt_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/receipt_icon"
+                    android:text="الإيصالات"
+                    android:textColor="#000"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/database_id7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/menu_item_style2"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/data_icon"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/databaseicon2" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/data_icon"
+                    android:text="البيانات بالعام"
+                    android:textColor="#000"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/activities_id7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/selector1"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/activities_icon"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/activityicon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/activities_icon"
+                    android:text="الأنشطه"
+                    android:textColor="#000"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/news_id7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/menu_item_style2"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/news_icon"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/newicon3" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/news_icon"
+                    android:text="الأخبار"
+                    android:textColor="#000"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/logout_id7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/menu_item_style2"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/logOut_icon"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/logouticon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/logOut_icon"
+                    android:text="Logout"
+                    android:textColor="#000"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.motion.widget.MotionLayout>

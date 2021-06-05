@@ -1,0 +1,692 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/homeConstraint"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    app:layoutDescription="@xml/activity_home_xml_homeconstraint_scene"
+    tools:context=".HomeActivity">
+
+    <ImageView
+        android:id="@+id/actionBar1"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/actionbar20"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView23"
+        android:layout_width="113dp"
+        android:layout_height="119dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toStartOf="@+id/menuMemberData_id"
+        app:layout_constraintStart_toEndOf="@+id/backMemberData_id"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/homebackgroundcircle2" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="68dp"
+        android:layout_height="70dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView23"
+        app:layout_constraintEnd_toEndOf="@+id/imageView23"
+        app:layout_constraintStart_toStartOf="@+id/imageView23"
+        app:layout_constraintTop_toTopOf="@+id/imageView23"
+        app:srcCompat="@drawable/logo10" />
+
+    <ImageView
+        android:id="@+id/menuMemberData_id"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/actionBar1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.3"
+        app:srcCompat="@drawable/menu50" />
+
+    <ImageView
+        android:id="@+id/backMemberData_id"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/menuMemberData_id"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/menuMemberData_id"
+        app:srcCompat="@drawable/backarrow5" />
+
+    <TextView
+        android:id="@+id/textView36"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="بيانات العضو"
+        android:textColor="#000"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/actionBar1"
+        app:layout_constraintEnd_toEndOf="@+id/imageView23"
+        app:layout_constraintStart_toStartOf="@+id/imageView23"
+        app:layout_constraintTop_toBottomOf="@+id/imageView23" />
+
+    <ScrollView
+        android:id="@+id/scrollView4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="160dp"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/actionBar1">
+
+        <androidx.constraintlayout.motion.widget.MotionLayout
+            android:id="@+id/constraintLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layoutDescription="@xml/activity_home_xml_constraintlayout2_scene">
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                android:text="اسم العضو"
+                android:textColor="#000"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+                app:layout_constraintEnd_toStartOf="@+id/imageView2"
+                app:layout_constraintTop_toTopOf="@+id/imageView2" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                android:text="رقم العضو"
+                android:textColor="#000"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+                app:layout_constraintEnd_toStartOf="@+id/imageView3"
+                app:layout_constraintTop_toTopOf="@+id/imageView3" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="22dp"
+                android:layout_height="32dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/humanicon2"
+                tools:ignore="NotSibling" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="31dp"
+                android:layout_height="32dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintEnd_toEndOf="@+id/imageView2"
+                app:layout_constraintStart_toStartOf="@+id/imageView2"
+                app:layout_constraintTop_toBottomOf="@+id/imageView2"
+                app:srcCompat="@drawable/idcard2" />
+
+            <TextView
+                android:id="@+id/member_name_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="15dp"
+                android:layout_marginRight="15dp"
+                android:text="مصطفى احمد الجندى"
+                android:textColor="#595959"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/textView9"
+                app:layout_constraintEnd_toStartOf="@+id/textView9"
+                app:layout_constraintTop_toTopOf="@+id/textView9" />
+
+            <TextView
+                android:id="@+id/member_number_id2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="15009"
+                android:textColor="#595959"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/textView10"
+                app:layout_constraintEnd_toEndOf="@+id/member_name_id"
+                app:layout_constraintTop_toTopOf="@+id/textView10" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout3"
+                android:layout_width="376dp"
+                android:layout_height="5dp"
+                android:layout_marginTop="15dp"
+                android:background="#BDAA01"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView3"></LinearLayout>
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="نوع العضوية"
+                android:textColor="#000"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/linearLayout12"
+                app:layout_constraintEnd_toStartOf="@+id/linearLayout7"
+                app:layout_constraintStart_toEndOf="@+id/linearLayout8"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout10" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="عدد افراد العضوية"
+                android:textColor="#000"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/linearLayout14"
+                app:layout_constraintEnd_toEndOf="@+id/textView13"
+                app:layout_constraintStart_toStartOf="@+id/textView13"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout12" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="آخر عام تم سداده"
+                android:textColor="#000"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/linearLayout11"
+                app:layout_constraintEnd_toEndOf="@+id/textView14"
+                app:layout_constraintStart_toStartOf="@+id/textView14"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout14" />
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="رقم العقد"
+                android:textColor="#000"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/linearLayout13"
+                app:layout_constraintEnd_toEndOf="@+id/textView15"
+                app:layout_constraintStart_toStartOf="@+id/textView15"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout11" />
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="رقم العقد المرتبط"
+                android:textColor="#000"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/linearLayout15"
+                app:layout_constraintEnd_toEndOf="@+id/textView16"
+                app:layout_constraintStart_toStartOf="@+id/textView16"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout13" />
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="رقم عضو سابق"
+                android:textColor="#000"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/linearLayout16"
+                app:layout_constraintEnd_toEndOf="@+id/textView17"
+                app:layout_constraintStart_toStartOf="@+id/textView17"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout15" />
+
+            <TextView
+                android:id="@+id/membership_kind_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="عاملة"
+                android:textColor="#595959"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/textView13"
+                app:layout_constraintEnd_toStartOf="@+id/linearLayout8"
+                app:layout_constraintStart_toEndOf="@+id/linearLayout9"
+                app:layout_constraintTop_toTopOf="@+id/textView13" />
+
+            <TextView
+                android:id="@+id/number_of_members"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5"
+                android:textColor="#595959"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/textView14"
+                app:layout_constraintEnd_toEndOf="@+id/membership_kind_id"
+                app:layout_constraintStart_toStartOf="@+id/membership_kind_id"
+                app:layout_constraintTop_toTopOf="@+id/textView14"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <TextView
+                android:id="@+id/latest_year_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2019"
+                android:textColor="#595959"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/textView15"
+                app:layout_constraintEnd_toEndOf="@+id/number_of_members"
+                app:layout_constraintStart_toStartOf="@+id/number_of_members"
+                app:layout_constraintTop_toTopOf="@+id/textView15" />
+
+            <TextView
+                android:id="@+id/number_of_contract"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textColor="#595959"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/textView16"
+                app:layout_constraintEnd_toEndOf="@+id/latest_year_id"
+                app:layout_constraintStart_toStartOf="@+id/latest_year_id"
+                app:layout_constraintTop_toTopOf="@+id/textView16" />
+
+            <TextView
+                android:id="@+id/associated_contract_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00000088421"
+                android:textColor="#595959"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/textView17"
+                app:layout_constraintEnd_toEndOf="@+id/number_of_contract"
+                app:layout_constraintStart_toStartOf="@+id/number_of_contract"
+                app:layout_constraintTop_toTopOf="@+id/textView17" />
+
+            <TextView
+                android:id="@+id/former_member_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1136"
+                android:textColor="#595959"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/textView18"
+                app:layout_constraintEnd_toEndOf="@+id/associated_contract_number"
+                app:layout_constraintStart_toStartOf="@+id/associated_contract_number"
+                app:layout_constraintTop_toTopOf="@+id/textView18"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout9"
+                android:layout_width="7dp"
+                android:layout_height="294dp"
+                android:background="#a7a7a7"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="@+id/linearLayout8"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/linearLayout8"></LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout8"
+                android:layout_width="3dp"
+                android:layout_height="294dp"
+                android:background="#a7a7a7"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="@+id/linearLayout7"
+                app:layout_constraintEnd_toStartOf="@+id/linearLayout7"
+                app:layout_constraintStart_toEndOf="@+id/linearLayout9"
+                app:layout_constraintTop_toTopOf="@+id/linearLayout7"></LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout7"
+                android:layout_width="7dp"
+                android:layout_height="294dp"
+                android:layout_marginTop="25dp"
+                android:background="#a7a7a7"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout3"></LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout14"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_marginTop="45dp"
+                android:background="@drawable/logostyle"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout12"></LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout12"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_marginTop="45dp"
+                android:background="@drawable/logostyle"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout10"></LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout10"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="@drawable/logostyle"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/linearLayout7"></LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout11"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_marginTop="45dp"
+                android:background="@drawable/logostyle"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout14"></LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout13"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_marginTop="45dp"
+                android:background="@drawable/logostyle"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout11"></LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout15"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_marginTop="45dp"
+                android:background="@drawable/logostyle"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout13"></LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout16"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="#a7a7a7"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout7"></LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/receivables_button"
+                android:layout_width="152dp"
+                android:layout_height="82dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/selector1"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout16">
+
+                <TextView
+                    android:id="@+id/textid1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:paddingTop="15dp"
+                    android:text="المستحقات"
+                    android:textColor="@color/white"
+                    android:textSize="22dp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@+id/textid1"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/moneyicon2" />
+            </RelativeLayout>
+
+
+        </androidx.constraintlayout.motion.widget.MotionLayout>
+    </ScrollView>
+
+    <ScrollView
+        android:id="@+id/menu22"
+        android:layout_width="190dp"
+        android:layout_height="350dp"
+        android:padding="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layoutDirection="rtl"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="65dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="5dp"
+                android:src="@drawable/logo10" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="5dp"
+                android:layout_marginTop="5dp"
+                android:paddingBottom="30dp"
+                android:text="Main Menu"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:id="@+id/user_dataID22"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/selector1"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/person_icon2"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/humanicon2" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/person_icon2"
+                    android:text="بيانات العضو"
+                    android:textColor="#000"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/payments_id2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/menu_item_style2"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/money_icon"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/moneyicon2" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/money_icon"
+                    android:text="المستحقات"
+                    android:textColor="#000"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/receipts_id2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/menu_item_style2"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/receipt_icon"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/receipt_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/receipt_icon"
+                    android:text="الإيصالات"
+                    android:textColor="#000"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/database_id2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/menu_item_style2"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/data_icon"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/databaseicon2" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/data_icon"
+                    android:text="البيانات بالعام"
+                    android:textColor="#000"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/activities_id2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/menu_item_style2"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/activities_icon"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/activityicon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/activities_icon"
+                    android:text="الأنشطه"
+                    android:textColor="#000"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/news_id2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/menu_item_style2"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/news_icon"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/newicon3" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/news_icon"
+                    android:text="الأخبار"
+                    android:textColor="#000"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/logout_id2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/menu_item_style2"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/logOut_icon"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/logouticon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/logOut_icon"
+                    android:text="Logout"
+                    android:textColor="#000"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.motion.widget.MotionLayout>

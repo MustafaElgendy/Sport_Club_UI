@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center">
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="550dp">
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="15dp"
+            android:text="TESTMERCHTST_EGP"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/exit_x_id" />
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="5700.00"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/textView11"
+            app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+        <TextView
+            android:id="@+id/exit_x_id"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:text="X"
+            android:gravity="center"
+            android:background="@drawable/logostyle"
+            android:textColor="#ffffff"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout5"
+            android:layout_width="0dp"
+            android:layout_height="5dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/logostyle"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView21" />
+
+        <TextView
+            android:id="@+id/textView23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginRight="25dp"
+            android:text="رقم البطاقة"
+            android:textColor="#000000"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout5" />
+
+    <EditText
+        android:id="@+id/credit_number_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/edit_text_style"
+        android:ems="10"
+        android:inputType="numberSigned"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:textDirection="rtl"
+        app:layout_constraintBottom_toBottomOf="@+id/textView23"
+        app:layout_constraintEnd_toStartOf="@+id/textView23"
+        app:layout_constraintStart_toStartOf="@+id/textView25"
+        app:layout_constraintTop_toTopOf="@+id/textView23" />
+
+        <TextView
+            android:id="@+id/textView24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="شهر إنتهاء الصلاحية"
+            android:textColor="#000000"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/textView23"
+            app:layout_constraintTop_toBottomOf="@+id/credit_card_imageView" />
+
+        <TextView
+            android:id="@+id/textView25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="سنة إنتهاء الصلاحية"
+            android:textColor="#000000"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/textView24"
+            app:layout_constraintEnd_toStartOf="@+id/textView24"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textView24" />
+
+        <TextView
+            android:id="@+id/textView26"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:text="اسم حامل البطاقة"
+            android:textColor="#000000"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/textView24"
+            app:layout_constraintTop_toBottomOf="@+id/months_spinner" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName2"
+            android:layout_width="165dp"
+            android:layout_height="27dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/edit_text_style"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:ems="10"
+            android:hint="الاسم"
+            android:inputType="textPersonName"
+            android:textDirection="rtl"
+            app:layout_constraintBottom_toBottomOf="@+id/textView26"
+            app:layout_constraintEnd_toStartOf="@+id/textView26"
+            app:layout_constraintTop_toTopOf="@+id/textView26" />
+
+        <TextView
+            android:id="@+id/textView27"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:text="رمز الأمان"
+            android:textColor="#000000"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/textView26"
+            app:layout_constraintTop_toBottomOf="@+id/textView26" />
+
+        <EditText
+            android:id="@+id/editTextNumber"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/edit_text_style"
+            android:ems="10"
+            android:inputType="number"
+            android:maxLength="3"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:textDirection="rtl"
+            app:layout_constraintBottom_toBottomOf="@+id/textView27"
+            app:layout_constraintEnd_toStartOf="@+id/imageView5"
+            app:layout_constraintTop_toTopOf="@+id/textView27"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <Button
+            android:id="@+id/next_payment_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/buttonstyle"
+            android:text="التالى"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            app:backgroundTint="#339933"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextNumber" />
+
+        <Button
+            android:id="@+id/cancel_payment_button"
+            android:layout_width="63dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/buttonstyle"
+            android:text="إلغاء"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            app:layout_constraintBottom_toBottomOf="@+id/next_payment_button"
+            app:layout_constraintStart_toEndOf="@+id/next_payment_button"
+            app:layout_constraintTop_toTopOf="@+id/next_payment_button" />
+
+        <Spinner
+            android:id="@+id/months_spinner"
+            android:layout_width="90dp"
+            android:layout_height="31dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edit_text_style"
+            android:backgroundTint="#339933"
+            android:gravity="center"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="@+id/textView24"
+            app:layout_constraintStart_toStartOf="@+id/textView24"
+            app:layout_constraintTop_toBottomOf="@+id/textView24" />
+
+        <Spinner
+            android:id="@+id/years_spinner"
+            android:layout_width="90dp"
+            android:layout_height="31dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edit_text_style"
+            android:backgroundTint="#339933"
+            android:gravity="center"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="@+id/months_spinner"
+            app:layout_constraintEnd_toEndOf="@+id/textView25"
+            app:layout_constraintStart_toStartOf="@+id/textView25"
+            app:layout_constraintTop_toBottomOf="@+id/textView25" />
+
+        <ImageView
+            android:id="@+id/credit_card_imageView"
+            android:layout_width="37dp"
+            android:layout_height="22dp"
+            android:layout_marginTop="10dp"
+            android:scaleType="fitCenter"
+            app:layout_constraintEnd_toEndOf="@+id/textView23"
+            app:layout_constraintStart_toStartOf="@+id/textView23"
+            app:layout_constraintTop_toBottomOf="@+id/textView23"
+            app:srcCompat="@drawable/button_style2" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="37dp"
+            android:layout_height="22dp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView27"
+            app:layout_constraintEnd_toStartOf="@+id/textView27"
+            app:layout_constraintTop_toTopOf="@+id/textView27"
+            app:srcCompat="@drawable/cvvicon" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

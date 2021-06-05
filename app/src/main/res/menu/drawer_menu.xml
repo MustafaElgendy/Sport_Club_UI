@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view"
+    >
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_memberData"
+            android:icon="@drawable/idcard2"
+            android:title="بيانات العضو" />
+        <item
+            android:id="@+id/nav_payment"
+            android:icon="@drawable/money_icon"
+            android:title="المستحقات" />
+        <item
+            android:id="@+id/nav_activity"
+            android:icon="@drawable/activityicon"
+            android:title="الأنشطه" />
+        <item
+            android:id="@+id/nav_dataOfYear"
+            android:icon="@drawable/databaseicon2"
+            android:title="بيانات العام" />
+        <item
+            android:id="@+id/nav_receipts"
+            android:icon="@drawable/receipt_icon"
+            android:title="الإصالات" />
+        <item
+            android:id="@+id/nav_news"
+            android:icon="@drawable/newicon3"
+            android:title="الأخبار" />
+    </group>
+    <item android:title="">
+        <menu>
+        <item
+            android:id="@+id/nav_logOut"
+            android:icon="@drawable/log_out_icon"
+            android:title="Logout" />
+        </menu>
+    </item>
+</menu>
